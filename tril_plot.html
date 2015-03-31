@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <meta charset="utf-8">
 <style>
 
@@ -66,9 +67,6 @@ d3.csv("movie_ts.csv", function(error, data) {
       // d.close = +d.close;
   });
 
-  
-
-
   x.domain(d3.extent(data, function(d) { return d.release_date; }));
   y.domain(d3.extent(data, function(d) { return d.domestic_total_gross; }));
 
@@ -94,3 +92,5 @@ d3.csv("movie_ts.csv", function(error, data) {
 });
 
 </script>
+</html>
+
